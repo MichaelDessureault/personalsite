@@ -1,5 +1,14 @@
-.footer {
+.footerRelative {
   position: relative;
+  background-color: #f6f6f6;
+  border-top: 1px solid #e3e6f0;
+}
+
+.footerFixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
   background-color: #f6f6f6;
   border-top: 1px solid #e3e6f0;
 }

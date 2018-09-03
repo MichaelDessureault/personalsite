@@ -15,7 +15,7 @@ class PageWrapper extends Component {
     return (
       <div>
         <HeaderContainer />
-        <div className={styles.innerContainer}>
+        <div id={"page-wrapper-inner-content"} className={styles.innerContainer}>
           {this.props.children}
         </div>
         <FooterContainer />

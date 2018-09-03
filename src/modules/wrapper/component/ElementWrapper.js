@@ -9,7 +9,8 @@ class ElementWrapper extends Component {
     style: PropTypes.shape({
       column: PropTypes.bool,
       wrap: PropTypes.bool,
-      center: PropTypes.bool,
+      itemsCenter: PropTypes.bool,
+      contentCenter: PropTypes.bool,
       padding: PropTypes.string,
     })
   }
@@ -19,20 +20,21 @@ class ElementWrapper extends Component {
     style: { 
       column: true,
       wrap: false,
-      center: false,
+      itemsCenter: false,
+      contentCenter: false,
       padding: "0px",
     }
   }
 
   getStyleObject = () => {
     const wrapperStyle = this.props.style;
-    console.log('wrapperStyle ', wrapperStyle)
 
     // flex structure
     let styleObject = { display: "flex" }
     styleObject.flexDirection = (wrapperStyle.column) ? "column" : "row"
     styleObject.flexWrap = (wrapperStyle.wrap) ? "wrap" : "nowrap"
-    styleObject.alignItems = (wrapperStyle.center) ? "center" : "flex-start"
+    styleObject.alignItems = (wrapperStyle.itemsCenter) ? "center" : "flex-start"
+    styleObject.justifyContent = (wrapperStyle.contentCenter) ? "center" : "flex-start"
     
     // padding
     styleObject.padding = wrapperStyle.padding

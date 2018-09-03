@@ -57,7 +57,7 @@
   composes: subMenuNavItemBase;
   left: 0;
   top: 100%;
-  border-top: 2px solid #e3e6f0;
+  border-top: 1px solid #e3e6f0;
 }
 
 .subMenuNavItemListLevel2 {
@@ -65,7 +65,7 @@
   composes: subMenuNavItemBase;
   left: 100%;
   top: 0;
-  border-left: 2px solid #e3e6f0;
+  border-left: 1px solid #e3e6f0;
 }
 
 .navItem:hover, .navItem:focus {

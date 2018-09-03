@@ -7,7 +7,7 @@ class About extends Component {
   render () {
     return (
       <div>
-        <div>
+        <div style={{height: "500px"}}>
           {"About"}
         </div>
       </div>
