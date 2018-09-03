@@ -1,0 +1,154 @@
+.mainContainer {
+  height: 100%;
+  width: 100%;
+}
+
+.customContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.bottomMargin {
+  margin-bottom: 10px;
+}
+
+.spaceEvenly { 
+  justify-content: space-evenly;
+}
+
+.hidden {
+  display: none;
+}
+
+.material_1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.input {
+  text-align: left;
+  padding: .5em 1em;
+  margin: 8px;
+  margin-top: 16px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: inherit;
+  font: inherit;
+}
+
+.materialStyle {
+  composes: material_1;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.dropDown {
+  composes: input;
+  padding: 0px;
+color: black !important;
+}
+
+.mediumDropDown {
+  composes: input;
+  margin: 0px;
+  /* margin-left: 45px; */
+  width: 200px;
+  padding: 0px;
+color: black !important;
+}
+
+.calendarStyle {
+  width: 240px;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.profilePictureDragDropAlt {
+  color: #43a0c5 !important;
+  border: 2px solid gray !important;
+  background-color: white !important;
+  /* box-shadow: 1px 1px 15px #43A0C5 !important; */
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+.dropzone {
+  width: 165px;
+  height: 165px;
+  border: 2px dashed rgb(102, 102, 102);
+  border-radius: 5px;
+  display: inline-block;
+  color: #53585E;
+  margin-right: 14px;
+}
+
+.dropzoneContent {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+  width: 100%;
+height: 100%;
+    padding: 10px;
+}
+
+.dropDownMakeOver {
+
+}
+
+
+/* ul-tag */
+.optionListContainer { 
+  list-style-type: none;
+  display:flex;
+  justify-content: space-evenly;
+  flex-flow: wrap;
+  margin: 2px 0 12px 0;
+  padding: 0 6px;
+}
+
+.optionStyle {
+  cursor: pointer;
+  display: inline-block;
+  margin: 2px;
+
+  /* Animation */
+  -webkit-animation: Lmuha .3s ease forwards;
+  animation: Lmuha .3s ease forwards;
+}
+
+.optionElement {
+  min-height: 17px;
+  background: white;
+  color: #707070;
+  padding: 12px;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 22px;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.15);
+}
+
+.optionElement:active, .optionStyle:active {
+  outline: none;
+}
+
+.optionElementSelected {
+  background-color: lightblue;
+}
+
+.disabledElement {
+  cursor: none;
+  background-color: lightgray;
+}

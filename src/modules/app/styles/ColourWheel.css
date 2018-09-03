@@ -1,0 +1,21 @@
+.colourWheel {
+  cursor: pointer;
+}
+
+.previewText {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.RGBInput {
+}
+
+.HEXInput {
+
+}
+
+.RGBInput::-webkit-inner-spin-button, 
+.RGBInput::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}

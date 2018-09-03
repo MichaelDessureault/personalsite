@@ -1,0 +1,26 @@
+.mainContainer {
+  height: 10px;
+  width: 100%;
+  margin: auto;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 99;
+  transition: 0.2s ease-in-out;
+}
+
+.progress {
+  background: lightblue;
+  height: 100%;
+  transition: 0.2s ease-in-out;
+}
+
+@media (min-width: 600px) {
+  .mainContainer {
+    top: 0px;
+    height: 15px;
+  }
+}

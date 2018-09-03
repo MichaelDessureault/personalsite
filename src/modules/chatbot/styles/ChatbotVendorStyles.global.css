@@ -1,0 +1,170 @@
+.rsc {
+  height: 98% !important;
+  width: 96% !important;
+  margin: auto !important;
+  max-width: 650px;
+}
+
+/* Header */
+
+.rsc-header, 
+div#chatbotDropdownList_input > .rw-widget-input > .rw-select,
+div#chatbotDropdownList_input.hideInputContainer > .rw-widget-container {
+  display: none !important;
+}
+
+.rsc-footer {
+  margin-top: 10px !important;
+  height: 40px !important;
+  /* The input element within the footer is 30px */
+}
+
+.rsc-footer > input[type=textarea] {
+  min-height: 40px !important;
+}
+
+.rsc-content {
+  height: 80.5% !important;
+  padding-top: 20px;
+}
+
+.rsc-content::-webkit-scrollbar {
+  width: 0px !important;
+  /* remove scrollbar space */
+  background: transparent !important;
+  /* optional: just make scrollbar invisible */
+}
+
+/* Bots message style */
+
+.rsc-ts-bubble.fhAWVE,
+.rsc-ts-bubble.xyYJS,
+.rsc-ts-bubble.jgMjlR {
+  text-align: left;
+  max-width: 60%;
+  background: #2acdcc;
+}
+
+/* Users input message style */
+
+.rsc-ts-bubble.kFPviT,
+.rsc-ts-bubble.dNuqrI {
+  text-align: right;
+  background: white;
+  max-width: 70%;
+  color: #707070;
+}
+
+
+/* Custom component */
+
+.rsc-cs {
+  margin: 0px 12px 0px 0px !important;
+}
+
+.rsc-cs.jKLQUD {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  margin: 0px 0px 0px 0px !important;
+}
+
+/* Input bar -- For error*/
+
+.rsc-input.hmRFgi {
+  color: red !important;
+  border-color: red !important;
+}
+
+/* Submit button */
+.rsc-submit-button.dBBLzP,
+.rsc-submit-button.kZiwDc {
+  padding: 10px 16px !important;
+}
+
+/* User option container */
+
+ul.rsc-os-options {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: wrap;
+}
+
+/* User option element */
+
+.rsc-os-option-element {
+  min-height: 17px !important;
+  background: white !important;
+  color: #707070 !important;
+}
+
+/* Each requiers an important to force override the class fully */
+
+div#chatbotDropdownList_input>.rw-popup-container {
+  display: inline-block !important;
+  position: relative !important;
+  z-index: 1 !important;
+  top: 0px !important;
+  left: 0px !important;
+  right: 0px !important;
+}
+
+div#chatbotDropdownList_input>.rw-popup-container>.rw-popup-transition {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+@media only screen and (min-height: 400px) {
+  .rsc-ts-bubble.fhAWVE,
+  .rsc-ts-bubble.xyYJS,
+  .rsc-ts-bubble.jgMjlR {
+      width: 82%;
+  }
+}
+
+@media only screen and (min-height: 750px) {
+  #colourPreview {
+    font-size: 25px !important;
+  }
+  .rsc-container * {
+      font-size: 14px !important;
+  }
+  .fa-3x {
+      font-size: 3em !important;
+  }
+  li.hvWyFD {
+      margin: 5px !important;
+  }
+  a.fMcZCH {
+      min-width: 66px !important;
+  }
+  .rsc {
+      width: 80% !important;
+  }
+  img.rsc-ts-image {
+      width: 50px !important;
+      height: 50px !important;
+  }
+  div.xyYJS,
+  div.jgMjlR {
+      margin-left: 56px !important;
+  }
+  .rsc-content {
+      height: 93% !important;
+  }
+}
+
+/* Figure out how to add this to the class directly... */
+
+.cr-slider-wrap {
+  margin: 5px auto !important;
+}
+
+/*
+* Use this selector to target the react widget that we want
+* to remove.
+*/
+
+/* .rsc-cs .rw-widget-input.rw-widget-picker.rw-widget-container {
+  display: none;
+} */

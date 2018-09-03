@@ -1,0 +1,20 @@
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 101;
+  /* width: 100%; */
+}
+
+.headerSection {
+  position: relative;
+  z-index: 1;
+  background-color: #f6f6f6;
+  /* transition: background-color 0.3s ease-in-out; */
+  border-bottom: 1px solid #e3e6f0;
+}
+
+.headerSection > * {
+  box-sizing: border-box !important;
+}
